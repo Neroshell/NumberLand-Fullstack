@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy ABC</title>
+    <link rel="stylesheet"href="/stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="nav-bar" id="nav-bar">
+        <div class="icon-div">
+        <i class="fa-solid fa-bars-staggered" id="bar"></i>
+        </div>
+        <div class="logo-box">
+            <a href="index.html"><img src="/images/Numberland.png" alt=""></a>
+        </div>
+
+        <div>
+            <ul>
+                <a href="/"><li>Home</li></a>
+                <a href="/playground">Playground</a>
+            </ul>                                    
+                
+            <a href="/log-out">
+                <button class="login-btn">Logout</button>
+              </a>
+
+        </div>
+
+        <div class="sidenav"  id="mySidenav">
+            <span class="fa-solid fa-xmark" id="closeNav"></span>
+            <a href="/">HOME</a>
+            <a href="/playground">Playground</a>
+            <a href="#" style="color: #D61355;">LOG OUT</a>
+        </div>
+</nav> <br> 
+
+<div class="overlay"></div>
+<div class="abc-first-div">
+        <div class="abc-heading">
+            <h1>Easy <span style="color: #D61355;">A</span><span style="color: #FCE22A;">B</span><span style="color: green;">C</span></h1>
+        </div>
+
+        <div class="abc-scores">
+            <span style="color: #D61355;">Scores</span>
+            <span class="score-board main-score">0</span><span class="score-board">/</span><span class="score-board end-game">10</span>
+
+        </div>
+</div>
+
+<div class="remark wrong"></div> <br>
+
+<div class="tip">
+
+    <p><span style="font-weight: bolder; color: green;">Useful Tip:</span> <br> Click on the corresponding letter</p>
+
+</div>
+<div class="alphabet">
+    <span class="alpha-box a" onclick=" playSound('a')">A</span> <span class="alpha-box b" onclick="playSound('b')">B</span> <span class="alpha-box c"  onclick=" playSound('c')">C</span>
+    <span class="alpha-box d" onclick=" playSound('d')">D</span> <span class="alpha-box e" onclick="playSound('e')">E</span> <span class="alpha-box f"  onclick=" playSound('f')">F</span>
+    <span class="alpha-box g" onclick=" playSound('g')">G</span> <span class="alpha-box h" onclick="playSound('h')">H</span> <span class="alpha-box i"  onclick=" playSound('i')">I</span>
+    <span class="alpha-box j" onclick=" playSound('j')">J</span> <span class="alpha-box k" onclick="playSound('k')">K</span> <span class="alpha-box l"  onclick=" playSound('l')">L</span>
+    <span class="alpha-box m" onclick=" playSound('m')">M</span> <span class="alpha-box n" onclick="playSound('n')">N</span> <span class="alpha-box o"  onclick=" playSound('o')">O</span>
+    <span class="alpha-box p" onclick=" playSound('p')">P</span> <span class="alpha-box q" onclick="playSound('q')">Q</span> <span class="alpha-box r"  onclick=" playSound('r')">R</span>
+    <span class="alpha-box s"  onclick=" playSound('s')">S</span> <span class="alpha-box t" onclick="playSound('t')">T</span> 
+    <span class="alpha-box u"  onclick=" playSound('u')" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">U</span>
+    <span class="alpha-box v"  onclick=" playSound('v')">V</span> <span class="alpha-box w" onclick=" playSound('w')">W</span> <span class="alpha-box x"  onclick=" playSound('x')">X</span>
+    <span class="alpha-box y"  onclick=" playSound('y')">Y</span> <span class="alpha-box z"  onclick=" playSound('z')">Z</span> 
+</div> 
+
+<div class="second-modal-2">
+    <span class="times-second-modal">&times;</span>
+   <h2 style="color: green;">Complete!</h2> <br>
+   <h3 style="margin: 15px;">Final Score 
+    <span class="modal-first-score"></span><span>/</span><span>26</span></h3>
+
+   <p class="comment"></p>  <br>
+   
+ <button class="btn-modal-2">Restart</button>
+
+</div>
+
+
+<div class="abc-btns">
+    <span class="play-btn">Play game</span> <span class="listen-btn" onclick="checkletter()">Listen again</span>
+</div>
+
+    <script src="/javascripts/abc.js"></script>
+</body>
+</html>

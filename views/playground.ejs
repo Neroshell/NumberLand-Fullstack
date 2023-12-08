@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NumberLand</title>
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+        <!-- owl swiper -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <!-- Aos libraries -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      </head>
+<body>
+    <div class="preload">
+        <div class="spinners"></div>
+      </div>
+    <nav class="nav-bar" id="nav-bar">
+        <div class="icon-div">
+        <i class="fa-solid fa-bars-staggered" id="bar"></i>
+        </div>
+        <div class="logo-box">
+            <a href="/"><img src="images/Numberland.png" alt=""></a>
+        </div>
+
+        <div>
+            <ul>
+                <a href="/"><li>Home</li></a>
+                <a href="#"> <li>Last Scores</li></a>
+                                                     
+                
+            </ul>                                    
+                
+            <a href="/log-out">
+                <button class="login-btn">Logout</button>
+              </a>
+
+        </div>
+
+        <div class="sidenav"  id="mySidenav">
+            <span class="fa-solid fa-xmark" id="closeNav"></span>
+                <a href="index.html">Home</a>
+                <a href="add.html" style="color: #D61355;">Home</a>
+                <a href="sub.html" style="color: #FCE22A;">Last scores</a>
+                <a href="div.html" style="color: #833AB4;">Log out</a>
+                
+        </div>
+</nav> 
+
+<div class="playground-main">
+    <div style="text-align: center; margin-top: 30px;">
+       <h2> Choose Your Weakness</h2>
+    </div>
+
+    <main class="main-game-options">
+            <a href="/playground/addition"><div class="game-options">
+                <img src="images/add-22.png" alt="">
+            </div></a>
+
+            <a href="/playground/multiplication"><div class="game-options">
+                <img src="images/multiply-22.png" alt="">
+            </div></a>
+            <a href="/playground/subtraction"><div class="game-options">
+                <img src="images/sub-22.png" alt="">
+            </div></a>
+            <a href="/playground/division"><div class="game-options">
+                <img src="images/divide-22.png" alt="">
+            </div></a>
+            <a href="/playground/easy-abc"><div class="game-options">
+                <img src="images/abc-22.png" alt="">
+            </div></a>
+    </main>
+</div>
+<script src="/javascripts/playground.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body class="body-calc">
+    <div class="preload">
+        <div class="spinners"></div>
+    </div>
+    <nav class="nav-bar" id="nav-bar">
+        <div class="icon-div">
+        <i class="fa-solid fa-bars-staggered" id="bar"></i>
+        </div>
+        <div class="logo-box">
+            <a href="/"><img src="/images/Numberland.png" alt=""></a>
+        </div>
+
+        <div>
+            <ul>
+                <a href="/"><li>Home</li></a>
+                <a href="/playground">Playground</a>
+            </ul>                                    
+                
+            <a href="/log-out">
+                <button class="login-btn">Logout</button>
+              </a>
+
+        </div>
+
+        <div class="sidenav"  id="mySidenav">
+            <span class="fa-solid fa-xmark" id="closeNav"></span>
+                <a href="/">HOME</a>
+                <a href="/playground">Playground</a>
+                <a href="#" style="color: #D61355;">LOG OUT</a>
+        </div>
+</nav> <br> 
+
+<div class="overlay"></div>
+<div class="scores">
+    <span style="color: #D61355;">Scores</span>
+    <span class="score-board main-score">0</span><span class="score-board">/</span><span class="score-board end-game">10</span>
+
+</div>
+<div class="remark wrong"></div>
+
+
+    <div class="everything">
+
+        <div class="answers">
+            <h1 class="answer-1"></h1>
+            <h1 class="dummy_1"></h1>
+            <h1 class="dummy_2"></h1>
+        </div>
+
+        <div class="second-modal">
+            <span class="times-second-modal">&times;</span>
+           <h2 style="color: green;">Complete!</h2> <br>
+           <h3 style="margin: 15px;">Final Score is 
+            <span class="modal-first-score"></span><span>/</span><span>10</span></h3>
+
+           <p class="comment"></p>  <br>
+           
+         <button class="btn-modal-2">Restart</button>
+
+        </div>
+
+        <div class="problem">
+
+            <h1 class="num-1"></h1>
+            <h1 class="add-sign">+</h1>
+            <h1 class="num-2"></h1>
+            <h1 class="equal">=</h1>
+            <h1 class="question-mark">?</h1>
+
+
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-calc">
+        <svg class="first-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#ffff" fill-opacity="1" d="M0,320L48,277.3C96,235,192,149,288,117.3C384,85,480,107,576,144C672,181,768,235,864,234.7C960,235,1056,181,1152,160C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        
+    </div>
+
+
+
+
+  
+    <script src="/javascripts/add.js"></script>
+</body>
+</html>
