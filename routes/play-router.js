@@ -3,7 +3,12 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('playground');
+  if (req.isAuthenticated()) {
+    res.render('playground');
+} else {
+    res.redirect('/login');
+}
+  
 });
 
 router.get('/addition', function(req, res, next) {
