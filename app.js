@@ -15,6 +15,7 @@ const indexRouter = require('./routes/index-router');
 const usersRouter = require('./routes/users-router');
 const signUpRouter = require('./routes/signup-router');
 const loginRouter = require('./routes/login-router');
+const logoutRouter = require('./routes/logout-router');
 const resetRouter = require('./routes/reset-router');
 const playRouter = require('./routes/play-router');
 
@@ -65,6 +66,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/sign-up', signUpRouter);
 app.use('/login', loginRouter);
+app.use('/logout', logoutRouter);
 app.use('/reset-password', resetRouter);
 app.use('/playground', playRouter);
 

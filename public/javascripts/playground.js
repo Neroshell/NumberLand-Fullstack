@@ -1,6 +1,7 @@
-let preload = document.querySelector(".preload");
+
 
 window.addEventListener("load", () => {
+        let preload = document.querySelector(".preload");
 
         preload.style.display = "none";
       

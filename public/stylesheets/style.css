@@ -170,15 +170,17 @@ nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     animation: preload ;
     animation-duration: 1s ;
     animation-timing-function: ease-in-out;
     animation-fill-mode: both;
     animation-iteration-count: infinite ;
-    position: fixed;
     width: 100%;
-    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:999;
     background-color: aliceblue;
 }
 .modal-box{
@@ -205,7 +207,7 @@ nav ul li{
   justify-content:center;
   align-items:center;
   background-color: white ;
-  height:100vh;
+  height:80vh;
  
 
 }
@@ -353,7 +355,8 @@ nav ul li{
 .input-wrapper{
     width:80%;
     margin:0 auto;
-    border-radius:10px
+    border-radius:10px;
+    
 }
 .form-btn{
     width:50%;
@@ -382,8 +385,8 @@ form input{
     padding:20px;
     border-radius:10px;
     background-color:whitesmoke;
-    border:none;
-    outline-color:#D61355
+    outline:none;
+    border: none;
 }
 
 .reset-password{
